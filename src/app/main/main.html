@@ -1,0 +1,5 @@
+<header ng-include="'app/components/header/header.html'"></header>
+
+<div ui-view="main"></div>
+
+<footer ng-include="'app/components/footer/footer.html'" class="animated" ng-class="{'open-footer':openFooter, 'close-footer': !openFooter}"></footer>

@@ -1,0 +1,168 @@
+body{
+	font-size: 14px;
+	height: 100vh;
+	overflow: hidden;
+
+	.f18{
+		font-size: 1.286em;
+	}
+
+	.f10{
+		font-size: 0.714em;
+	}
+}
+// HEADER
+header{
+	position: absolute;
+	#logo{
+		width: 320px;
+		height: 250px;
+		position: absolute;
+		left: 0; right: 0;
+		top: 0;
+	}
+	svg{
+		position: absolute;
+	}
+}
+#ganeshBox{
+	width: 290px;
+	height: 170px;
+	overflow: hidden;
+	position: absolute;
+}
+#lotusBox{
+	top: 170px;
+	width: 320px;
+	height: 80px;
+	overflow: hidden;
+	position: absolute;	
+}
+#txtIndia{
+	position: absolute;
+	left: 43px;
+	top: 45px;
+}
+#greenPath{
+	stroke:#ceef7c;
+	stroke-width: 14px;
+	stroke-linecap: square;
+}
+#pinkPath{
+	stroke:#ff4fbc;
+	stroke-width: 14px;
+	stroke-linecap: square;	
+}
+#greenPathL{
+	fill: #ceef7c;
+}
+#pinkPathL{
+	fill: #ff4fbc;
+}
+#greenPathO{
+	stroke:#ceef7c;
+	stroke-width: 5px;
+	stroke-linecap: square;	
+}
+.pinkPathO{
+	stroke:#ff4fbc;
+	stroke-width: 5px;
+	stroke-linecap: square;	
+}
+#triangle{
+	position: absolute;
+	width: 62px;
+	height: 72px;
+	left: 231px;
+	top: 121px;
+}
+#cube1{
+	position: absolute;
+	top: 182px;
+	left: 224px;
+	width: 12px;
+	height: 12px;
+}
+#cube2{
+	position: absolute;
+	top: 137px;
+	left: 295px;
+	width: 6px;
+	height: 8px;
+}
+#cube3{
+	position: absolute;
+	top: 146px;
+	left: 300px;
+	width: 7px;
+	height: 6px;
+}
+#cube4{
+	position: absolute;
+	top: 132px;
+	left: 307px;
+	width: 9px;
+	height: 9px;
+}
+#ganesh{
+	position: absolute;
+	top: -12px;
+	left: 0px;
+	width: 320px;
+	height: 200px;
+}
+#lotus{
+	position: absolute;
+	width: 145px;
+	height: 120px;
+	left: 83px;
+	top: -50px;
+}
+// FOOTER
+footer{
+	height: 225px;
+	background-color: #000;
+	color: #FFF;
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+
+	&.close-footer{
+		bottom: -195px;
+		transition: bottom 0.25s ease-out 0s;
+	}
+	&.open-footer{
+		bottom: 0;
+		transition: bottom 0.5s ease 0s;
+	}
+	> div{
+		> p{
+			padding-top: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+			line-height: 1.2em;
+		}
+	}
+	button{
+		i{
+			display: inline-block;
+			margin-left: 10px;
+		}
+	}
+}
+#about{
+	padding-right: 0px;
+	padding-left: 10px;
+	margin-top: 60px;
+	max-width: 600px;
+	float: right;
+	> p{
+		width: 90%;
+		max-width: 500px;
+	}
+	#contact{
+		> *{
+			display: inline-block;
+		}
+	}
+}
