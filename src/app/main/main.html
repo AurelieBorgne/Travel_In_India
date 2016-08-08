@@ -2,4 +2,8 @@
 
 <div ui-view="main"></div>
 
-<footer ng-include="'app/components/footer/footer.html'" class="animated" ng-class="{'open-footer':openFooter, 'close-footer': !openFooter}"></footer>
+<footer class="animated" ng-class="{'open-footer':openFooter, 'close-footer': !openFooter}">
+	<div ng-include="'app/components/menuAlbum/menu-album.html'"></div>
+	<div ng-include="'app/components/footer/footer.html'" class="footer-box"></div>
+
+</footer>

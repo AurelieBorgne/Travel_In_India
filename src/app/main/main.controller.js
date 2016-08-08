@@ -9,6 +9,8 @@
   function MainCtrl($rootScope) {
     var main = this;
 
+    $rootScope.idSelectCity = 1;
+
     $rootScope.openFooter = false;
 
   }

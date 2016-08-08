@@ -3,6 +3,10 @@ body{
 	height: 100vh;
 	overflow: hidden;
 
+	.f24{
+		font-size: 1.714em;
+	}
+
 	.f18{
 		font-size: 1.286em;
 	}
@@ -10,7 +14,16 @@ body{
 	.f10{
 		font-size: 0.714em;
 	}
+
+	.pointer-cursor{
+		cursor: pointer;
+	}
 }
+
+*:focus{
+  outline: none;
+}
+
 // HEADER
 header{
 	position: absolute;
@@ -120,8 +133,6 @@ header{
 }
 // FOOTER
 footer{
-	height: 225px;
-	background-color: #000;
 	color: #FFF;
 	position: absolute;
 	z-index: 10;
@@ -132,21 +143,26 @@ footer{
 		transition: bottom 0.25s ease-out 0s;
 	}
 	&.open-footer{
-		bottom: 0;
+		bottom: 0px;
 		transition: bottom 0.5s ease 0s;
 	}
-	> div{
-		> p{
-			padding-top: 5px;
-			padding-left: 10px;
-			padding-right: 10px;
-			line-height: 1.2em;
+	.footer-box{
+		height: 225px;
+		background-color: #000;
+		overflow: hidden;
+		> div{
+			> p{
+				padding-top: 5px;
+				padding-left: 10px;
+				padding-right: 10px;
+				line-height: 1.2em;
+			}
 		}
-	}
-	button{
-		i{
-			display: inline-block;
-			margin-left: 10px;
+		button{
+			i{
+				display: inline-block;
+				margin-left: 10px;
+			}
 		}
 	}
 }

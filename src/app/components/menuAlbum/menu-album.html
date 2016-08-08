@@ -1,0 +1,8 @@
+<div ng-controller="MenuAlbumCtrl as menuAlbum">
+	<div class="toggle-btn pointer-cursor latoLight f24 text-primary" ng-click="menuAlbum.toggleMenu()">
+		<p>
+			<span>{{menuAlbum.selectCity}}</span>
+			<i ng-show="menuAlbum.isOpen"class="fa fa-chevron-down" aria-hidden="true"></i><i class="fa fa-chevron-right" ng-show="!menuAlbum.isOpen" aria-hidden="true"></i>
+		</p>
+	</div>
+</div>
