@@ -1,8 +1,24 @@
-<div ng-controller="MenuAlbumCtrl as menuAlbum">
-	<div class="toggle-btn pointer-cursor latoLight f24 text-primary" ng-click="menuAlbum.toggleMenu()">
+<div id="menuAlbum" ng-controller="MenuAlbumCtrl as menuAlbum" ng-class="{'open-menuAlbum':menuAlbum.isOpen, 'close-menuAlbum': !menuAlbum.isOpen}">
+	<div class="toggle-btn pointer-cursor latoLight f24" ng-click="menuAlbum.toggleMenu()">
 		<p>
 			<span>{{menuAlbum.selectCity}}</span>
-			<i ng-show="menuAlbum.isOpen"class="fa fa-chevron-down" aria-hidden="true"></i><i class="fa fa-chevron-right" ng-show="!menuAlbum.isOpen" aria-hidden="true"></i>
+			<i ng-show="!menuAlbum.isOpen"class="fa fa-chevron-down pull-right" aria-hidden="true"></i><i class="fa fa-chevron-right" ng-show="menuAlbum.isOpen" aria-hidden="true"></i>
 		</p>
+	</div>
+	<div id="sliderBox">
+		<span class="loader-bar"></span>
+		<div id="navigation">
+		<button id="previous" class="navBtn" ng-click="menuAlbum.prevSlide()">
+			<i class="fa fa-chevron-left" aria-hidden="true"></i>
+		</button>
+		<button id="next" class="navBtn" ng-click="menuAlbum.nextSlide()">
+			<i class="fa fa-chevron-right" aria-hidden="true"></i>			
+		</button>
+		</div>
+		<ul id="slider" class="list-unstyled">
+			<li ng-repeat="item in [] | range: menuAlbum.photos.nbImg" class="pointer-cursor pull-left no-padding" ng-class="{'active': item == idSelectPhoto}">
+				<img alt="" ng-src="assets/images/{{menuAlbum.photos.albumName}}/thumbs/thumb_img{{item}}.jpg" ng-click="menuAlbum.selectPhoto(item)" ng-init="menuAlbum.imgIsLoad(item)">
+			</li>
+		</ul>
 	</div>
 </div>

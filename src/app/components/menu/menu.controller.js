@@ -19,6 +19,7 @@
 
     menu.selectCity = function(idCity){
       $rootScope.idSelectCity = idCity;
+      $rootScope.$broadcast('updateIdSelectCity');
     }
   }
 })();

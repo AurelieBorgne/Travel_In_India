@@ -135,7 +135,7 @@ header{
 footer{
 	color: #FFF;
 	position: absolute;
-	z-index: 10;
+	z-index: 15;
 	width: 100%;
 
 	&.close-footer{
@@ -150,6 +150,8 @@ footer{
 		height: 225px;
 		background-color: #000;
 		overflow: hidden;
+		position: relative;
+		z-index: 10;
 		> div{
 			> p{
 				padding-top: 5px;

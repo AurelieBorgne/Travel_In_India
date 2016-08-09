@@ -5,7 +5,7 @@
     .module('travelInIndia')
     .factory('Cities', CitiesService);
 
-  /** @ngInject */
+  /** @ngInject */ // Remplacer par un webservice -> renvoie les albums nommé par villes de la BDD
   function CitiesService() {
     return{
 
